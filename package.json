@@ -1,0 +1,37 @@
+{
+  "name": "cli",
+  "version": "1.0.0",
+  "description": "Elm CLI Skeleton",
+  "type": "module",
+  "targets": {
+    "module": {
+      "source": "src/index.ts",
+      "optimize": true,
+      "isLibrary": true,
+      "outputFormat": "esmodule",
+      "engines": {
+        "node": ">= 16"
+      }
+    }
+  },
+  "bin": {
+    "my-cli": "./bin/cli.js"
+  },
+  "scripts": {
+    "dev": "parcel watch",
+    "build": "parcel build"
+  },
+  "author": "Andrew MacMurray",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-elm": "^2.7.0",
+    "elm": "^0.19.1-5",
+    "elm-format": "^0.8.5",
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "elm-taskport": "^2.0.1",
+    "xhr2": "^0.2.1"
+  }
+}
